@@ -1,0 +1,17 @@
+<div class="form-group d-flex align-items-center justify-content-center">
+  <%= form_with url: "/valid_emails/search", method: :get do |form| %>
+    <div class="m-1 form-control">
+      <%= form.label :first_name, "First Name" %>
+      <%= form.text_field :first_name %><br>
+    </div>
+    <div class="m-1 form-control">
+      <%= form.label :last_name, "Last Name" %>
+      <%= form.text_field :last_name %><br>
+    </div>
+    <div class="m-1 form-control">
+      <%= form.label :url, "URL" %>
+      <%= form.text_field :url %><br>
+    </div>
+    <%= form.submit "Search", class: 'btn btn-primary mt-2' %>
+  <% end %>
+</div>

@@ -1,0 +1,11 @@
+<%= render partial: "search" %><br><br>
+
+<div class="d-flex align-items-center justify-content-center">
+  <ul class="list-group">
+    <% @valid_emails.each do |valid_email| %>
+      <li class="list-group-item">
+        <%= valid_email.email %><br>
+      </li>
+    <% end %>
+  </ul>
+</div>

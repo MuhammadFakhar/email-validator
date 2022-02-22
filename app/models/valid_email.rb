@@ -1,0 +1,2 @@
+class ValidEmail < ApplicationRecord
+end
